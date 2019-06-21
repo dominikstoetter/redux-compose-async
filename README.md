@@ -14,7 +14,7 @@ export const fetchShopCredentials = createActionCreator(FETCH_FROM_MY_API)
 
 export const fetchFormMyApiSaga = createFetchSaga(({ uuid, iso8601 }) => ({
   action: FETCH_FROM_MY_API,
-  url: `${url}/${iso8601}/${uuid}`,
+  url: `//${process.env.api}/${iso8601}/${uuid}`,
   method: 'GET',
 }))
 
