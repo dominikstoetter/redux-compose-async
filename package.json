@@ -1,0 +1,20 @@
+{
+  "name": "redux-compose",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:dominikstoetter/redux-compose.git",
+  "author": "<dominik.stoetter@8select.de>",
+  "license": "MIT",
+  "dependencies": {
+    "redux-saga": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=10",
+    "engineStrict": "true"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-8select": "^2.0.0",
+    "prettier": "^1.18.2"
+  }
+}
