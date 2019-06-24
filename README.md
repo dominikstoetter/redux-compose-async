@@ -14,6 +14,9 @@ yarn add redux-compose-async
 npm add redux-compose-async
 ```
 
+## [API](./docs/API.md)
+
+
 ## Example
 
 ### Reducks Module
