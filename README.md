@@ -1,15 +1,26 @@
-# redux-compose
+# redux-compose-async
 
 create a [reducks module](https://github.com/erikras/ducks-modular-redux) in seconds with these little helpers
+
+## Installation
+
+### yarn
+```bash
+yarn add redux-compose-async
+```
+
+### npm
+```bash
+npm add redux-compose-async
+```
 
 ## Example
 
 ### Reducks Module
 my-store.js
 ```js
-import { createActionCreator, createActionParents } from 'dominikstoetter/redux-compose/actions'
-import { createDataReducer } from 'dominikstoetter/redux-compose/reducer'
-import { createFetchSaga, createRootSaga } from 'dominikstoetter/redux-compose/sagas'
+import {  createFetchSaga, createRootSaga, createDataReducer, createActionCreator, createActionParents } from 'redux-compose-async'
+
 
 export const { FETCH_FROM_MY_API } = createActionParents([ 'FETCH_FROM_MY_API' ])
 export const fetchFromMyApi = createActionCreator(FETCH_FROM_MY_API)
@@ -32,7 +43,7 @@ with-my-store.js
 ```js
 import { connect } from 'react-redux'
 import { fetchFromMyApi } from './my-store.js'
-import { promisifyActionCreator } from 'dominikstoetter/redux-compose/actions'
+import { promisifyActionCreator } from 'redux-compose-async'
 
 export default connect(
   ({ myStore }) => ({ myStore: { ...myStore } }),
