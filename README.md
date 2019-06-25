@@ -4,6 +4,20 @@ create a resolving [ducks module](https://github.com/erikras/ducks-modular-redux
 
 ![](https://images.unsplash.com/photo-1442689859438-97407280183f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=480&q=50)
 
+## why?
+
+ever wanted a action to resolve or reject like this?
+```js
+try {
+  await fetchFromMyApi({ uuid })
+  await fetchSomethingElse({ uuid })
+  await displaySomeNotificiation({ uuid })
+} catch (e) {
+  console.log('reject')
+}
+```
+
+
 ## Installation
 
 ### yarn
