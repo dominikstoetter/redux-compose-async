@@ -6,7 +6,7 @@ create a resolving [ducks module](https://github.com/erikras/ducks-modular-redux
 
 ## why?
 
-ever wanted a action to resolve or reject like this?
+ever wanted an action to resolve or reject like this?
 ```js
 try {
   await fetchFromMyApi({ uuid })
@@ -38,7 +38,7 @@ npm add redux-compose-async
 ### Reducks Module
 my-store.js
 ```js
-import {  createFetchSaga, createRootSaga, createDataReducer, createActionCreator, createActionParents } from 'redux-compose-async'
+import { createFetchSaga, createRootSaga, createDataReducer, createActionCreator, createActionParents } from 'redux-compose-async'
 
 
 export const { FETCH_FROM_MY_API } = createActionParents([ 'FETCH_FROM_MY_API' ])
