@@ -1,5 +1,7 @@
 # redux-compose-async
 
+Deprecated! React has a much better system: [React - Context](https://reactjs.org/docs/context.html)
+
 create a resolving [ducks module](https://github.com/erikras/ducks-modular-redux) in seconds with these little helpers
 
 ![](https://images.unsplash.com/photo-1442689859438-97407280183f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=480&q=50)
